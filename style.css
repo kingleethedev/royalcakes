@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all-content{
+    background: #fff;    
+}
+#navbar{
+    background-color: #fa9fdc;
+    padding-left: 50px;
+    font-weight: bold;
+}
+#logo{
+    font-size: 23px;
+    background: linear-gradient(to right,#03bdfc,#6c14de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+/*.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+    border-radius: 5px;
+}*/
+
+.nav-link{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+ .nav-link::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #140200;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+ }
+ .nav-link:hover::after{
+    width: 100%;}
+.icons{
+    margin-left: 30px;   
+}
+.icons i{
+    margin-left: 10px;
+    transition: 0.5s ease;
+}
+.icons i:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and(max-width:330px) {
+    #logo{
+        font-size: 15px;
+    }
+}
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    background:#fff;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 80px;
+
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    background: linear-gradient(to right,#03bdfc,#6c14de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+.content h2{
+    font-size: 40px;
+    color:#fa9fdc;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: '';
+    background: linear-gradient(to right,#03bdfc,#6c14de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"  Birthday cakes";}
+    20%{content:"  Chocolate cakes";}
+    50%{content:"  Pie cakes";}
+    60%{content:"  Party cakes";}
+    100%{content:"  Slice cakes";}
+}
+.content p{
+    color: #140200;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #fa9fdc;
+    color:black;
+    transition: 0.5s ease;
+}
+.content .btn:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:800px) {
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px) {
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px) {
+        .home{
+           height: 100vh;
+            
+        }
+    } 
+ @media screen and (max-width:330px) {
+        .content h2{
+            font-size: 30px;    
+        }
+        .content h3{
+            font-size: 30px;
+        }
+    }      
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+
+.banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 50px;
+}
+.banner .img{
+    flex: 1 1 300px;
+}
+.banner .img img{
+    width: 100%;
+}
+.banner .contenx{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;   
+}
+.banner .contenx h3{
+    color: #fa9fdc;
+    font-weight: bold;
+}
+.banner .contenx h2{
+    font-size: 50px;
+    color: #fa9fdc;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.banner .contenx p{
+    color: #140200;  
+}
+#btnorder button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: #fa9fdc;
+    color: #140200;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and(max-width:800px) {
+    .banner .contenx h3{
+        font-size: 50px;
+    }
+    
+}
+@media screen and(max-width:855px) {
+    .banner {
+        height: 100vh;
+    }
+    
+}
+
+#product-cards h1{
+   text-align: center;
+   font-weight: bold;
+   margin-top: 50px;
+   color: #6c14de;
+   text-shadow: 1px 1px 1px black;
+   border-bottom: 2px solid #fa9fdc;
+}
+#product-cards .card{
+    background-color: #fa9fdc;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay{
+    display: grid;
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    margin-left: -10px;
+    width: 70px;
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 1%;
+    transition: 0.5s ease;
+}
+.overlay i{
+    background-color:#fa9fdc;
+    height: 30px;
+    font-weight: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;   
+}
+#product-cards h3{
+    color:black;
+    text-shadow: 1px 1px 1px black;
+}
+.star{
+    color: yellow;
+}
+#product-cards p{
+    color: black;
+    font-weight: 300;
+}
+#product-cards h6{
+    font-size: 20px;
+    color: #140200;
+    font-weight: bold;
+}
+#product-cards h6 span button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: white;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    border: 2px solid #140200;
+    float: right;
+    font-weight: bold;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+#product-cards h6 span button:hover{
+    background-color: #140200;
+    color: #fff;
+}
+#Gallery{
+    margin-top: 50px;  
+}
+#Gallery h1{
+    text-align: center;
+   font-weight: bold;
+   margin-top: 50px;
+   color: #6c14de;
+   text-shadow: 1px 1px 1px black;
+   border-bottom: 2px solid #fa9fdc;
+}
+#Gallery .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#Gallery .overlay{
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;   
+}
+#Gallery .card:hover .overlay{
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.5s ease;
+}
+#About{
+     margin-top: 50px;
+}
+#About h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #6c14de;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #fa9fdc;
+}
+#About .card{
+    background-color: #fa9fdc;
+    box-shadow: 0px 0px 5px black;
+}
+#About p{
+    color: black;   
+    font-weight: 100;
+}
+@media screen and (max-width:1000px) {
+    #About p{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:760px) {
+    #About p{
+        font-size: 20px;
+    }
+    
+}
+
+#Contact{
+    margin-top: 100px;
+}
+#Contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #6c14de;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #fa9fdc;
+}
+#Contact input{
+    background-color: #fa9fdc;
+}
+#Contact input::placeholder{
+    color: black;
+
+}
+#Contact textarea{
+    background-color: #fa9fdc;
+}
+#Contact textarea::placeholder{
+    color: black;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: #fa9fdc;
+}
+
+
+#footer{
+    width: 100%;
+    background-color:white ;
+    margin-top: 100px;
+}
+#footer h1{
+    color: #fa9fdc;
+    padding-top: 30px; 
+}
+#footer p{
+    color: #140200;
+}
+.icons{
+    align-items: center;
+}
+.icons i{
+    background-color: white;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: #fa9fdc;
+}
+.copyright{
+    color: black;
+    margin-top: 20px;
+}
+.credite{
+    color: #140200;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: #fa9fdc;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 49px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
